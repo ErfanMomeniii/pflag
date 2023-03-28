@@ -131,7 +131,7 @@ It is optional and for this operation, you should define a function and pass it 
 var flagvar int
 func init() {
 	validation := func(value int)error{
-		if value < 4 {
+		if value <= 4 {
 			return errors.New("int value should be greater than 4")
         }
 	}	
